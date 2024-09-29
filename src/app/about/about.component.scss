@@ -1,0 +1,134 @@
+@import '../styles/colors';
+
+.about-container {
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-post {
+  width: 100%;
+  max-width: 1165px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.featured-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featured-text {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.featured-link {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.post-grid {
+  display: flex;
+  justify-content: space-between; /* Alinha os cards com espaçamento entre eles */
+  flex-wrap: wrap; /* Permite que os cards quebrem de linha se necessário */
+  gap: 20px; /* Espaço entre os cards */
+  max-width: 1200px; /* Limita a largura máxima do grid */
+  width: 100%;
+
+}
+
+.post-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.33% - 20px); /* Faz com que cada card ocupe 1/3 da linha */
+  max-width: calc(33.33% - 20px); /* Limita a largura máxima */
+  box-sizing: border-box; /* Garante que o padding e as bordas estejam incluídos na largura total */
+}
+
+.post-category {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.post-summary {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.post-link {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.linkedin-icon,
+.a4s-icon,
+.github-icon,
+.instagram-icon,
+.gmail-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.linkedin-icon {
+  background-image: url('../../assets/images/icons/icon_linkedin.png');
+}
+
+.a4s-icon {
+  background-image: url('../../assets/images/icons/icon_a4s.png');
+}
+
+.github-icon {
+  background-image: url('../../assets/images/icons/icon_github.png');
+}
+
+.instagram-icon {
+  background-image: url('../../assets/images/icons/icon_instagram.png');
+}
+
+.gmail-icon {
+  background-image: url('../../assets/images/icons/icon_gmail.png');
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .post-card {
+    flex-basis: 100%; /* Em telas menores, cada card ocupa 100% da largura */
+  }
+}

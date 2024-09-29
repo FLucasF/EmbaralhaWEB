@@ -1,0 +1,63 @@
+@import '../styles/colors';  // Ajuste conforme o caminho do seu projeto
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  box-sizing: border-box; // Garante que padding e border sejam incluídos no tamanho total dos elementos
+  font-family: 'Poppins', sans-serif; /* Fonte gordinha */
+  font-size: 20px;
+}
+
+.container-navbar {
+  border: none; // Se houver uma borda causando o problema
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; // Certifica-se de que a navbar fica acima de outros elementos
+
+  header {
+    background-color: $color1;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1031;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0; // Ajuste a altura da navbar conforme necessário
+    height: auto; // Deixa a altura flexível com base no padding
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Adiciona sombra semelhante ao Bootstrap
+  }
+
+  ul {
+    list-style: none; // Remove o estilo de lista padrão
+    display: flex;
+    gap: 20px; // Adiciona espaçamento entre os itens
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    &.active {
+      color: $color6; // Ajuste a cor do texto ativo
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: $navbar;
+      background-color: rgba(0, 123, 255, 0.1); // Estilo de hover
+    }
+  }
+}
+
+.content {
+  padding-top: 150px; // Aumente o padding para adicionar o espaço necessário
+}
+

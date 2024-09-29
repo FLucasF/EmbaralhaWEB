@@ -1,0 +1,14 @@
+@import '../app/styles/colors';
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: $main-background-game; // Cor uniforme para o fundo
+
+}
+
+
+.container-navbar {
+  background-color: $main-background-game; // Certifique-se de que a cor da navbar é a mesma
+  z-index: 1030;
+}

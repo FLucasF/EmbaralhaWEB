@@ -1,0 +1,100 @@
+@import '../styles/colors';
+
+// Container principal
+.cards-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinha os cards ao início (esquerda) */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+// Cada card com comportamento fixo para ter 3 por linha
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: calc(33.33% - 20px); /* Cada card ocupa 33.33% da linha menos o gap */
+  margin-bottom: 20px; /* Espaço entre as linhas */
+}
+
+.card-img-top img {
+  background-color: #55595c;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Faz a imagem ocupar o espaço mantendo a proporção */
+  margin-bottom: 0; /* Espaço entre as linhas */
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-text {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-top: 10px; /* Ajusta o espaço acima do texto */
+  margin-bottom: 1rem; /* Ajusta o espaço abaixo do texto */
+}
+
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px; /* Espaço entre os botões */
+}
+
+.btn {
+  background-color: $color1; /* Mantém a cor de fundo amarelo */
+  color: #fff; /* Cor do texto */
+  border-radius: 7px;
+  padding: 10px 20px; /* Aumenta o padding para dar mais espaço */
+  font-size: 1rem; /* Aumenta o tamanho da fonte */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 5px rgba(7, 55, 122, 0.25); /* Sombra consistente com o botão principal */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken($background-dropbox, 10%); /* Escurece o fundo no hover */
+  }
+
+  &:active {
+    transform: scale(0.98); /* Efeito de clique */
+  }
+}
+
+.text-muted {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-align: right;
+}
+
+// Responsividade
+@media (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px); /* Mantém o comportamento para 3 cartas por linha */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Duas cartas por linha em telas menores */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Uma carta por linha em telas muito pequenas */
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "contexts": [
+    {
+      "name": "Animal",
+      "context_image": "assets/images/images_context/animals.png",
+      "words": [
+        {
+          "word": "ARARA",
+          "image": "assets/images/animal/arara.jpg"
+        },
+        {
+          "word": "CAPIVARA",
+          "image": "assets/images/animal/capivara.jpg"
+        },
+        {
+          "word": "CUTIA",
+          "image": "assets/images/animal/cutia.jpg"
+        },
+        {
+          "word": "GAMBA",
+          "image": "assets/images/animal/gamba.jpg"
+        },
+        {
+          "word": "JACARE",
+          "image": "assets/images/animal/jacare.jpg"
+        },
+        {
+          "word": "JIBOIA",
+          "image": "assets/images/animal/jiboia.jpg"
+        },
+        {
+          "word": "PERERECA",
+          "image": "assets/images/animal/perereca.jpg"
+        },
+        {
+          "word": "TAMANDUA",
+          "image": "assets/images/animal/tamandua.jpg"
+        },
+        {
+          "word": "TUCANO",
+          "image": "assets/images/animal/tucano.jpg"
+        },
+        {
+          "word": "JABUTI",
+          "image": "assets/images/animal/jabuti.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Food",
+      "context_image": "assets/images/images_context/fruits.png",
+      "words": [
+        {
+          "word": "ABACAXI",
+          "image": "assets/images/food/abacaxi.jpg"
+        },
+        {
+          "word": "AÇAÍ",
+          "image": "assets/images/food/acai.jpg"
+        },
+        {
+          "word": "BEIJU",
+          "image": "assets/images/food/beiju.jpg"
+        },
+        {
+          "word": "CACAU",
+          "image": "assets/images/food/cacau.jpg"
+        },
+        {
+          "word": "CAJA",
+          "image": "assets/images/food/caja.jpg"
+        },
+        {
+          "word": "CAJU",
+          "image": "assets/images/food/caju.jpg"
+        },
+        {
+          "word": "CANJICA",
+          "image": "assets/images/food/canjica.jpg"
+        },
+        {
+          "word": "CUPUAÇU",
+          "image": "assets/images/food/cupuacu.jpg"
+        },
+        {
+          "word": "JENIPAPO",
+          "image": "assets/images/food/jenipapo.jpg"
+        },
+        {
+          "word": "JERIMUM",
+          "image": "assets/images/food/jerimum.jpg"
+        },
+        {
+          "word": "MANDIOCA",
+          "image": "assets/images/food/mandioca.jpg"
+        },
+        {
+          "word": "MINGAU",
+          "image": "assets/images/food/mingau.jpg"
+        },
+        {
+          "word": "PAÇOCA",
+          "image": "assets/images/food/pacoca.jpg"
+        },
+        {
+          "word": "PIRÃO",
+          "image": "assets/images/food/pirao.jpg"
+        },
+        {
+          "word": "PITANGA",
+          "image": "assets/images/food/pitanga.jpg"
+        },
+        {
+          "word": "PITOMBA",
+          "image": "assets/images/food/pitomba.jpg"
+        },
+        {
+          "word": "TACACA",
+          "image": "assets/images/food/tacaca.jpg"
+        },
+        {
+          "word": "TAPIOCA",
+          "image": "assets/images/food/tapioca.jpg"
+        }
+
+      ]
+    },
+    {
+      "name": "Acessorio",
+      "context_image": "assets/images/images_context/objects.png",
+      "words": [
+        {
+          "word": "ABACAXI",
+          "image": "assets/images/food/abacaxi.jpg"
+        }
+
+      ]
+    },
+    {
+      "name": "Roupa",
+      "words": [
+        {
+          "word": "ABACAXI",
+          "image": "assets/images/food/abacaxi.jpg"
+        }
+
+      ]
+    }
+  ]
+}
+

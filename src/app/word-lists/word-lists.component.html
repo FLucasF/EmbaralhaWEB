@@ -1,0 +1,12 @@
+<div class="word-list-container">
+  <h2>{{ contextName }}</h2>
+
+  <div class="words-grid">
+    <div class="word-card" *ngFor="let wordData of contextWords">
+      <img [src]="wordData.image" alt="{{ wordData.word }}" />
+      <span>{{ wordData.word }}</span>
+    </div>
+  </div>
+
+  <button routerLink="/context" class="btn btn-secondary">Voltar ao Contexto</button>
+</div>

@@ -1,0 +1,77 @@
+@import '../styles/colors';
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza os itens principais */
+  position: relative; /* Torna o contêiner um contexto de posicionamento para a imagem */
+  background-color: $main-background-game; /* Ajuste para o fundo */
+  height: 100vh; /* Faz o contêiner ocupar a altura total da tela */
+  padding: 20px;
+  color: white; /* Ajuste a cor do texto */
+}
+
+.title {
+  font-size: 2rem;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo para a imagem no lado direito */
+.background-image-right {
+  position: absolute;
+  top: 54%;
+  right: 300px; /* Ajusta a posição para mais à esquerda */
+  transform: translateY(-50%);
+  width: 800px; /* Mantém o tamanho reduzido */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a nova imagem no lado esquerdo */
+.left-container {
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo do botão personalizado */
+.btn {
+  background-color: $color1; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  border-radius: 7px;
+  width: 350px;
+  height: 50px;
+  margin: 10px;
+  margin-top: 40px;
+  box-shadow: 0 8px 5px rgba(7, 55, 122, 0.25); /* Sombra com transparência */
+  font-size: 1.5rem; /* Tamanho da fonte */
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease; /* Transição suave para hover e clique */
+
+  &:hover {
+    background-color: darken($background-dropbox, 10%); /* Escurece o fundo no hover */
+  }
+
+  &:active {
+    transform: scale(0.98); /* Efeito de clique */
+  }
+}
