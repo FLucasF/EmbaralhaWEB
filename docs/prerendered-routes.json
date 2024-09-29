@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/about",
+    "/context",
+    "/game",
+    "/menu",
+    "/word-lists"
+  ]
+}
